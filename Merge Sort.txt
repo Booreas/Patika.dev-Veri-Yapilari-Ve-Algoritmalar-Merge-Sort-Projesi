@@ -1,0 +1,30 @@
+[16,21,11,8,12,22] -> Merge Sort
+
+1)
+Adım 1: Diziyi iki parçaya ayıralım:
+[16,21,11] , [8,12,22]
+
+Adım 2: ilk diziyi sıralayalım
+
+ ->[16], [21,11] 
+ ->[16], [21] , [11]
+ ->[16], [11,21]
+ ->[11,16,21]
+
+Adım 3: ikinci diziyi sıralayalım
+
+ -> [8] , [12,22]
+ -> [8] , [12] , [22]
+ -> [8] , [12,22]
+ -> [8,12,22]
+
+Adım 4: iki parça da sıralı olduğu için her parçanın aynı sıradaki elemanlarını karşılaştırarak başlayalım.
+İlk sayının belirlenmesinin ardından diğer parçanın en küçük elemanı ile sayımızı seçtiğimiz parçanın içindeki bir sonraki eleman karşılaştırılır bu şekilde işlem devam ettirilirse:
+
+[8,11,12,16,21,22]  sonucuna ulaşılır.
+
+2)
+
+Best case    : O(n*logn)
+Average case : O(n*logn)
+Worst case   : O(n*logn)
